@@ -1,0 +1,74 @@
+body{
+	background-color: #243d99;
+	font-family: 'Baloo Tammudu', cursive;
+}
+
+img {
+	width:100%;
+	margin: 0 auto;
+}
+
+.jumbotron {
+	padding: 0;
+	background-color: #243d99;
+	margin-bottom: 0;
+}
+
+label {
+	color: #d4272b;
+	font-size: 3em;
+	margin-bottom: -2rem;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #faab1e;
+}
+
+.btn-primary {
+	background-color: #faab1e;
+	border-color:#1e9948;
+	color: #d4272b;
+	padding-top:.7rem;
+	padding-bottom: -.7rem;
+}
+
+
+.btn-primary:hover {
+	border-color:#1e9948;
+	background-color: #ef8a22;
+	color: #d4272b;
+}
+
+.btn-burger {
+	background-color: #63483a;
+	color: #378e5d;
+	padding-top:.7rem;
+	padding-bottom: -.7rem;
+	border-color:#d4272b;
+}
+
+.btn-burger:hover{
+	background-color: #63483a;
+	color: #378e5d;
+	padding-top:.7rem;
+	padding-bottom: -.7rem;
+	border-color:#d4272b;
+}
+
+.burgertime {
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+}
+
+.add_burger {
+	margin-top: -2rem;
+	padding: 0 10rem;
+}
+
+.card {
+	border-color: #209848;
+}
+
+.card-body {
+
+	color: #d4272b;
+	font-size: 1.3em;
+}
