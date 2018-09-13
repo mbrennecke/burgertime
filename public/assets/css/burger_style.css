@@ -3,6 +3,11 @@ body{
 	font-family: 'Baloo Tammudu', cursive;
 }
 
+.burgertimeImage {
+	width:20rem;
+	margin: 0 auto;
+}
+
 img {
 	width:100%;
 	margin: 0 auto;
@@ -21,6 +26,11 @@ label {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #faab1e;
 }
+
+#burger {
+	margin-top: -.5rem;
+}
+
 
 .btn-primary {
 	background-color: #faab1e;
