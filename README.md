@@ -15,3 +15,4 @@ This project is useful for learning SQL commands from inside node applications. 
 This project is maintained by Matthew Brennecke mbrennecke10@gmail.com
 
 ## Link to this project
+https://tranquil-waters-40302.herokuapp.com/
