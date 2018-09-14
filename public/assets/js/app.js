@@ -4,11 +4,11 @@ $(function() {
   $("#addburger").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-	console.log("still working");
+	
     var newBurg = {
       name: $("#burger").val().trim()
     };
-	console.log(newBurg);
+	if (newBurg.name == ""){return}
 	$("#burger").val("");
     // Send the POST request.
     $.ajax("/api/burgers", {
@@ -18,13 +18,13 @@ $(function() {
       function() {
         console.log("created new burger");
         // Reload the page to get the updated list
-        location.reload();
+       // location.reload();
       });
   });
   
     $("#devoured").on("click", function(event) {
     var id = $(this).data("id");
-
+	console.log(id);
     var newDevoured = {
       devoured: true
     };
