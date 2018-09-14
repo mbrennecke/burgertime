@@ -25,6 +25,7 @@ label {
 	margin-bottom: -2rem;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #faab1e;
+	padding-left: 2rem;
 }
 
 #burger {
@@ -38,17 +39,27 @@ label {
 	color: #d4272b;
 	padding-top:.7rem;
 	padding-bottom: -.7rem;
+	margin-left: 2rem;
+}
+
+.btn-primary2 {
+	background-color: #faab1e;
+	border-color:#1e9948;
+	color: #d4272b;
+	padding-top:.7rem;
+	padding-bottom: -.7rem;
+
 }
 
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary2:hover {
 	border-color:#1e9948;
 	background-color: #ef8a22;
 	color: #d4272b;
 }
 
 .btn-burger {
-	background-color: #63483a;
+	background-color: #91501e;
 	color: #378e5d;
 	padding-top:.7rem;
 	padding-bottom: -.7rem;
@@ -56,7 +67,7 @@ label {
 }
 
 .btn-burger:hover{
-	background-color: #63483a;
+	background-color: #91501e;
 	color: #378e5d;
 	padding-top:.7rem;
 	padding-bottom: -.7rem;
@@ -75,6 +86,7 @@ label {
 
 .card {
 	border-color: #209848;
+	margin-bottom: 1rem;
 }
 
 .card-body {
