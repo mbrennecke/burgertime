@@ -1,6 +1,28 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $("#").on("click", function(event) {
+
+  $("#addburger").on("click", function(event) {
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
+	console.log("still working");
+    var newBurg = {
+      name: $("#burger").val().trim()
+    };
+	console.log(newBurg);
+	$("#burger").val("");
+    // Send the POST request.
+    $.ajax("/api/burgers", {
+      type: "POST",
+      data: newBurg
+    }).then(
+      function() {
+        console.log("created new burger");
+        // Reload the page to get the updated list
+        location.reload();
+      });
+  });
+  
+    $("#somethingelse").on("click", function(event) {
     var id = $(this).data("id");
     var newSleep = $(this).data("newsleep");
 
@@ -20,24 +42,4 @@ $(function() {
       }
     );
   });
-
-  $(".addburger").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
-    event.preventDefault();
-
-    var newBurg = {
-      name: $("#burger").val().trim(),
-    };
-
-    // Send the POST request.
-    $.ajax("/api/burgers", {
-      type: "POST",
-      data: newBurg
-    }).then(
-      function() {
-        console.log("created new cat");
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
-  });
+})
