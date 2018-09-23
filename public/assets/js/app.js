@@ -16,15 +16,13 @@ $(function() {
       data: newBurg
     }).then(
       function() {
-        console.log("created new burger");
         // Reload the page to get the updated list
        location.reload();
       });
   });
   
-    $("#devoured").on("click", function(event) {
+    $(".devoured").on("click", function(event) {
     var id = $(this).data("id");
-	console.log(id);
     var newDevoured = {
       devoured: true
     };
@@ -35,7 +33,6 @@ $(function() {
       data: newDevoured
     }).then(
       function() {
-        console.log("changed devoured to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
       }
